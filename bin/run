@@ -9,7 +9,7 @@ song1 = Song.new(name: "Hello", album: "25")
 puts "song name: " + song1.name
 puts "song album: " + song1.album
 song1.save
-puts
+puts song1.id
 
 song2 = Song.new(name: "22", album: "Red")
 puts "song name: " + song2.name
@@ -27,5 +27,3 @@ puts "song album: " + song4.album
 song4.save
 
 DB[:conn].execute("SELECT * FROM songs")
-
-Song.column_names
