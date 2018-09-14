@@ -27,4 +27,6 @@ song.save
 
 DB[:conn].execute("SELECT * FROM songs")
 
-Song.find_by_name("22")
+Class.column_names
+
+
